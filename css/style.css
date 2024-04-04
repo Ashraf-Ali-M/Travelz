@@ -304,11 +304,11 @@ body{
   align-items: center;
 }
 
-.book .row .images{
+.book .row .image{
   flex: 1 1 40rem;
 }
 
-.book .row .images img{
+.book .row .image img{
   width: 100%;
 }
 
