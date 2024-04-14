@@ -111,22 +111,22 @@
 
     </div>
 
-    <form action="">
+    <form action="php/connect.php" method="post">
       <div class="inputBox">
         <h3>Where to</h3>
-        <input type="text" placeholder="place name">
+        <input type="text" placeholder="place name" name="place_name">
       </div>
       <div class="inputBox">
         <h3>How many</h3>
-        <input type="number" placeholder="number of guests">
+        <input type="number" placeholder="number of guests" name="no_of_guests">
       </div>
       <div class="inputBox">
         <h3>arrivals</h3>
-        <input type="date">
+        <input type="date" name="arrival">
       </div>
       <div class="inputBox">
         <h3>leaving</h3>
-        <input type="date">
+        <input type="date" name="leaving">
       </div>
       <input type="submit" class="btn" value="book now">
     </form>
@@ -609,16 +609,16 @@
         <img src="images/contact-img.jpg" alt="">
       </div>
 
-      <form action="">
+      <form action="php/contact.php" method="post">
         <div class="inputbox">
-          <input type="text" placeholder="name">
-          <input type="email" placeholder="email">
+          <input type="text" placeholder="name" name="name">
+          <input type="email" placeholder="email" name="email">
         </div>
         <div class="inputbox">
-          <input type="number" placeholder="number">
-          <input type="text" placeholder="subject">
+          <input type="number" placeholder="number" name="number">
+          <input type="text" placeholder="subject" name="subject">
         </div>
-        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+        <textarea placeholder="message" name="message" id="" cols="30" rows="10"></textarea>
         <input type="submit" class="btn" value="send message">
       </form>
 
