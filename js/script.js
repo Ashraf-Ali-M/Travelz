@@ -6,6 +6,7 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
+const nameInput = document.querySelector("#input");
 
 
 
@@ -67,3 +68,9 @@ var swiper = new Swiper(".review-slider", {
   },
 });
 
+nameInput.addEventListener("input", (event)=>{
+  window.addEventListener("beforeunload",function(event){
+    event.preventDefault();
+    event.returnValue = true;
+  });
+})
