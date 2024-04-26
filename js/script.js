@@ -7,6 +7,8 @@ let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
 const nameInput = document.querySelector("#input");
+let online = document.getElementById("online");
+let offline = document.getElementById("offline");
 
 
 
@@ -73,4 +75,12 @@ nameInput.addEventListener("input", (event)=>{
     event.preventDefault();
     event.returnValue = true;
   });
+})
+
+window.addEventListener('online',function(){
+  online.style.display = 'block';
+})
+
+window.addEventListener('offline',function(){
+  offline.style.display = 'block';
 })
