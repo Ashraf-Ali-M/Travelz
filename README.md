@@ -1,1 +1,1 @@
-https://ashraf-ali-m.github.io/travelz/
+ https://ashraf-ali-m.github.io/Travelz/
